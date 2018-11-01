@@ -4,7 +4,7 @@ Donate link: https://www.tannysoft.com/
 Tags: line, line-today, feed, social
 Requires at least: 4.5
 Tested up to: 4.8
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,14 +19,23 @@ Official development of Line Today feed is on GitHub, with official stable relea
 == Installation ==
 
 1. Upload the plugin files to the `/wp-content/plugins/line-today-feed` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
+2. Activate the plugin through the 'Plugins' screen in WordPress
+
+== Frequently Asked Questions ==
+
+= Where can I find the new RSS Feed created by this plugin? =
+
+* The feed can be found at https://www.example.com/line-today-feed
 
 == Changelog ==
+
+= 1.0.1 =
+* Update RSS Feed created by this plugin.
 
 = 1.0.0 =
 * First public version.
 
 == Upgrade Notice ==
 
-= 1.0.0 =
+= 1.0.1 =
 * First public version.

@@ -11,7 +11,7 @@
 	$the_query = new WP_Query( $args ); $i=0;
 	while ( $the_query->have_posts() ) : $the_query->the_post();
 
-		$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+		$feat_image = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()) );
 		$categories = get_the_category();
 		if ( ! empty( $categories ) ) {
 			$category = esc_html( $categories[0]->name );   

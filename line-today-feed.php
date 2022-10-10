@@ -15,6 +15,8 @@
 add_action( 'init', 'ltd_feed_init' );
 function ltd_feed_init() {
 	add_rewrite_rule( '^line-today-feed$', 'index.php?ltd_feed_stats=true', 'top' );
+    add_rewrite_rule( '^feed/linetoday$', 'index.php?ltd_feed_stats=true', 'top' );
+    add_rewrite_rule( '^feed/linetoday/([a-z0-9-]+)[/]?', 'index.php?ltd_feed_stats=true&category=$matches[1]', 'top' );
 	flush_rewrite_rules();
 }
 
@@ -23,6 +25,7 @@ add_action( 'query_vars', 'ltd_feed_query_vars' );
 function ltd_feed_query_vars( $query_vars )
 {
     $query_vars[] = 'ltd_feed_stats';
+    $query_vars[] = 'category';
     return $query_vars;
 }
 

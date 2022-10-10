@@ -3,7 +3,7 @@
 * Plugin Name: Line Today Feed by Tannysoft
 * Plugin URI: https://www.tannysoft.com/
 * Description: Auto send feed for line today application.
-* Version: 1.0
+* Version: 1.1.0
 * Author: Tannysoft
 * Author URI: https://www.tannysoft.com
 * License: GPL-2.0+

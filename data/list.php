@@ -19,7 +19,7 @@
 		$feat_id			= get_post_thumbnail_id(get_the_id());
 		$feat_og_id		= get_post_meta( get_the_id(), '_yoast_wpseo_opengraph-image-id', true );
 		$feat_line_id = ($feat_og_id) ? $feat_og_id : $feat_id;
-		$feat_image		= wp_get_attachment_url($feat_line_id);
+		$feat_image		= get_site_url() . wp_get_attachment_url($feat_line_id);
 		$categories		= get_the_category();
 		if ( ! empty( $categories ) ) {
 			$category = esc_html( $categories[0]->name );
